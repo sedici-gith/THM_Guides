@@ -104,7 +104,7 @@ Analysing all this information, we can deduce that we can’t bypass the timer. 
 
 We need to create a script to automate all this process.
 
-<details><summary><strong>brute_OTP_Hammer_THM.py</strong></summary>
+<details><summary><h3>brute_OTP_Hammer_THM.py</h3></summary>
   
 ```python
 
@@ -238,7 +238,7 @@ This way we can obtain the second flag in the response.
 Note: to generate a new JWT token, we can use the python code attached and not only the site [JWT.io](https://jwt.io).
 
 
-<details><summary><strong>generate_JWT_Hammer_THM.py</strong></summary>
+<details><summary><h3>generate_JWT_Hammer_THM.py</h3></summary>
   
 ```python
 
