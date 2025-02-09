@@ -6,6 +6,8 @@ Flags:
 
 > What is the content of the hidden text file in ```/var/www/html```?
 
+---
+
 We can start changing local DNS to easily handle all the process.
 ```
 sudo nano /etc/hosts
