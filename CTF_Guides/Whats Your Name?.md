@@ -180,7 +180,7 @@ Let's try with the same script we used before.
 And it works! We obtained the admin ```cookie``` and now we are able to enter as an admin into the dashboard retrieving the ```second flag```.
 
 
-Lessons learned:
+### Lessons learned:
 * Not only are the technical aspects important, but we also need to read the entire text to fully comprehend the fault logic behind the target machine’s security.
 * Always check every script twice, especially when we are attempting a blind attack.
 * Add to ```Gobuster``` search the ```Python``` extension.
