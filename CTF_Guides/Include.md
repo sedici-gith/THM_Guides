@@ -20,7 +20,7 @@ Now we can proceed with an ```Nmap``` scan.
 ```
 sudo nmap -sS -T4 include.thm -p-
 ```
-We discovered three open ports, and we can list the services they provide.
+We discovered 8 open ports, and we can list the services they provide.
 ```
 sudo nmap -sS -p22,25,110,143,993,995,4000,50000 -sV -T4 include.thm
 ```
